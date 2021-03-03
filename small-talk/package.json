@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:small-talk.helloWorld"
+		"*"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "small-talk.helloWorld",
-				"title": "Hello World"
+				"command": "small-talk.statusBarClick",
+				"title": "Translate"
 			}
 		]
 	},
