@@ -18,6 +18,14 @@
 			{
 				"command": "small-talk.statusBarClick",
 				"title": "Translate"
+			},
+			{
+				"command": "small-talk.translateSpanish",
+				"title": "Translate: Spanish"
+			},
+			{
+				"command": "small-talk.translateCommentSpanish",
+				"title": "Translate Comment: Spanish"
 			}
 		]
 	},
@@ -47,5 +55,10 @@
 		"ts-loader": "^8.0.14",
 		"webpack": "^5.19.0",
 		"webpack-cli": "^4.4.0"
+	},
+	"dependencies": {
+		"@google-cloud/translate": "^6.1.0",
+		"dotenv": "^8.2.0",
+		"request": "^2.88.2"
 	}
 }
