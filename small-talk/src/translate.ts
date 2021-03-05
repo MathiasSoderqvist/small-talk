@@ -10,7 +10,7 @@ const projectId = 'translate-306709';
 const translator = new Translate({ projectId }); //google cloud platform service id number
 
 // Translate info message function
-export async function translateThis(language: 'es' | 'se') {
+export async function translateThis(language: 'af' | 'sq' | 'am' | 'hy' | 'az' | 'eu' | 'be' | 'bn' | 'bs' | 'bg' | 'ca' | 'ceb' | 'zh-CN' | 'zh-TW' | 'co' | 'hr' | 'cs' | 'da' | 'nl' | 'en' | 'eo' | 'et' | 'fi' | 'fr' | 'fy' | 'gl' | 'ka' | 'de' | 'el' | 'gu' | 'ht' | 'ha' | 'haw' | 'he' | 'hi' | 'hmg' | 'hu' | 'is' | 'ig' | 'id' | 'ga' | 'it' | 'ja' | 'jv' | 'kn' | 'kk' | 'km' | 'rw' | 'ko' | 'ku' | 'ky' | 'lo' | 'la' | 'lv' | 'lt' | 'lb' | 'mk' | 'mg' | 'ms' | 'ml' | 'mt' | 'mi' | 'mr' | 'mn' | 'my' | 'ne' | 'no' | 'ny' | 'or' | 'ps' | 'fa' | 'pl' | 'pt' | 'pa' | 'ro' | 'ru' | 'sm' | 'gd' | 'sr' | 'st' | 'sn' | 'sd' | 'si' | 'sk' | 'sl' | 'so' | 'es' | 'su' | 'sw' | 'se' | 'tl' | 'tg' | 'ta' | 'tt' | 'te' | 'th' | 'tr' | 'tk' | 'uk' | 'ur' | 'ug' | 'uz' | 'vi' | 'cy' | 'xh' | 'yi' | 'yo'| 'zu') {
   //active editor
   const editor = vscode.window.activeTextEditor;
   if (editor) {
@@ -32,7 +32,7 @@ export async function translateThis(language: 'es' | 'se') {
 }
 
 //Translate into new comment function
-export async function translateComment(language: 'es' | 'se', flag: 'es' | 'se') {
+export async function translateComment(language: 'af' | 'sq' | 'am' | 'hy' | 'az' | 'eu' | 'be' | 'bn' | 'bs' | 'bg' | 'ca' | 'ceb' | 'zh-CN' | 'zh-TW' | 'co' | 'hr' | 'cs' | 'da' | 'nl' | 'en' | 'eo' | 'et' | 'fi' | 'fr' | 'fy' | 'gl' | 'ka' | 'de' | 'el' | 'gu' | 'ht' | 'ha' | 'haw' | 'he' | 'hi' | 'hmg' | 'hu' | 'is' | 'ig' | 'id' | 'ga' | 'it' | 'ja' | 'jv' | 'kn' | 'kk' | 'km' | 'rw' | 'ko' | 'ku' | 'ky' | 'lo' | 'la' | 'lv' | 'lt' | 'lb' | 'mk' | 'mg' | 'ms' | 'ml' | 'mt' | 'mi' | 'mr' | 'mn' | 'my' | 'ne' | 'no' | 'ny' | 'or' | 'ps' | 'fa' | 'pl' | 'pt' | 'pa' | 'ro' | 'ru' | 'sm' | 'gd' | 'sr' | 'st' | 'sn' | 'sd' | 'si' | 'sk' | 'sl' | 'so' | 'es' | 'su' | 'sw' | 'se' | 'tl' | 'tg' | 'ta' | 'tt' | 'te' | 'th' | 'tr' | 'tk' | 'uk' | 'ur' | 'ug' | 'uz' | 'vi' | 'cy' | 'xh' | 'yi' | 'yo'| 'zu', flag: 'af' | 'sq' | 'am' | 'hy' | 'az' | 'eu' | 'be' | 'bn' | 'bs' | 'bg' | 'ca' | 'ceb' | 'zh-CN' | 'zh-TW' | 'co' | 'hr' | 'cs' | 'da' | 'nl' | 'en' | 'eo' | 'et' | 'fi' | 'fr' | 'fy' | 'gl' | 'ka' | 'de' | 'el' | 'gu' | 'ht' | 'ha' | 'haw' | 'he' | 'hi' | 'hmg' | 'hu' | 'is' | 'ig' | 'id' | 'ga' | 'it' | 'ja' | 'jv' | 'kn' | 'kk' | 'km' | 'rw' | 'ko' | 'ku' | 'ky' | 'lo' | 'la' | 'lv' | 'lt' | 'lb' | 'mk' | 'mg' | 'ms' | 'ml' | 'mt' | 'mi' | 'mr' | 'mn' | 'my' | 'ne' | 'no' | 'ny' | 'or' | 'ps' | 'fa' | 'pl' | 'pt' | 'pa' | 'ro' | 'ru' | 'sm' | 'gd' | 'sr' | 'st' | 'sn' | 'sd' | 'si' | 'sk' | 'sl' | 'so' | 'es' | 'su' | 'sw' | 'se' | 'tl' | 'tg' | 'ta' | 'tt' | 'te' | 'th' | 'tr' | 'tk' | 'uk' | 'ur' | 'ug' | 'uz' | 'vi' | 'cy' | 'xh' | 'yi' | 'yo'| 'zu') {
   //active editor
   const editor = vscode.window.activeTextEditor;
   if (editor) {
