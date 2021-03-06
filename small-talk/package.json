@@ -20,12 +20,844 @@
 				"title": "Translate"
 			},
 			{
+				"command": "small-talk.translateAfrikaans",
+				"title": "Translate: Afrikaans"
+			},
+			{
+				"command": "small-talk.translateCommentAfrikaans",
+				"title": "Translate Comment: Afrikaans"
+			},
+			{
+				"command": "small-talk.translateAmharic",
+				"title": "Translate: Amharic"
+			},
+			{
+				"command": "small-talk.translateCommentAmharic",
+				"title": "Translate Comment: Amharic"
+			},
+			{
+				"command": "small-talk.translateArmenian",
+				"title": "Translate: Armenian"
+			},
+			{
+				"command": "small-talk.translateCommentArmenian",
+				"title": "Translate Comment: Armenian"
+			},
+			{
+				"command": "small-talk.translateAzerbaijani",
+				"title": "Translate: Azerbaijani"
+			},
+			{
+				"command": "small-talk.translateCommentAzerbaijani",
+				"title": "Translate Comment: Azerbaijani"
+			},
+			{
+				"command": "small-talk.translateBasque",
+				"title": "Translate: Basque"
+			},
+			{
+				"command": "small-talk.translateCommentBasque",
+				"title": "Translate Comment: Basque"
+			},
+			{
+				"command": "small-talk.translateBelarusian",
+				"title": "Translate: Belarusian"
+			},
+			{
+				"command": "small-talk.translateCommentBelarusian",
+				"title": "Translate Comment: Belarusian"
+			},
+			{
+				"command": "small-talk.translateBengali",
+				"title": "Translate: Bengali"
+			},
+			{
+				"command": "small-talk.translateCommentBengali",
+				"title": "Translate Comment: Bengali"
+			},
+			{
+				"command": "small-talk.translateBosnian",
+				"title": "Translate: Bosnian"
+			},
+			{
+				"command": "small-talk.translateCommentBosnian",
+				"title": "Translate Comment: Bosnian"
+			},
+			{
+				"command": "small-talk.translateBulgarian",
+				"title": "Translate: Bulgarian"
+			},
+			{
+				"command": "small-talk.translateCommentBulgarian",
+				"title": "Translate Comment: Bulgarian"
+			},
+			{
+				"command": "small-talk.translateCatalan",
+				"title": "Translate: Catalan"
+			},
+			{
+				"command": "small-talk.translateCommentCatalan",
+				"title": "Translate Comment: Catalan"
+			},
+			{
+				"command": "small-talk.translateCebuano",
+				"title": "Translate: Cebuano"
+			},
+			{
+				"command": "small-talk.translateCommentCebuano",
+				"title": "Translate Comment: Cebuano"
+			},
+			{
+				"command": "small-talk.translateChinese(simplified)",
+				"title": "Translate: Chinese (simplified)"
+			},
+			{
+				"command": "small-talk.translateCommentChinese(simplified)",
+				"title": "Translate Comment: Chinese (simplified)"
+			},
+			{
+				"command": "small-talk.translateChinese(traditional)",
+				"title": "Translate: Chinese (traditional)"
+			},
+			{
+				"command": "small-talk.translateCommentChinese(traditional)",
+				"title": "Translate Comment: Chinese (traditional)"
+			},
+			{
+				"command": "small-talk.translateCorsican",
+				"title": "Translate: Corsican"
+			},
+			{
+				"command": "small-talk.translateCommentCorsican",
+				"title": "Translate Comment: Corsican"
+			},
+			{
+				"command": "small-talk.translateCroatian",
+				"title": "Translate: Croatian"
+			},
+			{
+				"command": "small-talk.translateCommentCroatian",
+				"title": "Translate Comment: Croatian"
+			},
+			{
+				"command": "small-talk.translateCzech",
+				"title": "Translate: Czech"
+			},
+			{
+				"command": "small-talk.translateCommentCzech",
+				"title": "Translate Comment: Czech"
+			},
+			{
+				"command": "small-talk.translateDanish",
+				"title": "Translate: Danish"
+			},
+			{
+				"command": "small-talk.translateCommentDanish",
+				"title": "Translate Comment: Danish"
+			},
+			{
+				"command": "small-talk.translateDutch",
+				"title": "Translate: Dutch"
+			},
+			{
+				"command": "small-talk.translateCommentDutch",
+				"title": "Translate Comment: Dutch"
+			},
+			{
+				"command": "small-talk.translateEnglish",
+				"title": "Translate: English"
+			},
+			{
+				"command": "small-talk.translateCommentEnglish",
+				"title": "Translate Comment: English"
+			},
+			{
+				"command": "small-talk.translateEsperanto",
+				"title": "Translate: Esperanto"
+			},
+			{
+				"command": "small-talk.translateCommentEsperanto",
+				"title": "Translate Comment: Esperanto"
+			},
+			{
+				"command": "small-talk.translateEstonian",
+				"title": "Translate: Estonian"
+			},
+			{
+				"command": "small-talk.translateCommentEstonian",
+				"title": "Translate Comment: Estonian"
+			},
+			{
+				"command": "small-talk.translateFinnish",
+				"title": "Translate: Finnish"
+			},
+			{
+				"command": "small-talk.translateCommentFinnish",
+				"title": "Translate Comment: Finnish"
+			},
+			{
+				"command": "small-talk.translateFrench",
+				"title": "Translate: French"
+			},
+			{
+				"command": "small-talk.translateCommentFrench",
+				"title": "Translate Comment: French"
+			},
+			{
+				"command": "small-talk.translateFrisian",
+				"title": "Translate: Frisian"
+			},
+			{
+				"command": "small-talk.translateCommentFrisian",
+				"title": "Translate Comment: Frisian"
+			},
+			{
+				"command": "small-talk.translateGalician",
+				"title": "Translate: Galician"
+			},
+			{
+				"command": "small-talk.translateCommentGalician",
+				"title": "Translate Comment: Galician"
+			},
+			{
+				"command": "small-talk.translateGeorgian",
+				"title": "Translate: Georgian"
+			},
+			{
+				"command": "small-talk.translateCommentGeorgian",
+				"title": "Translate Comment: Georgian"
+			},
+			{
+				"command": "small-talk.translateGerman",
+				"title": "Translate: German"
+			},
+			{
+				"command": "small-talk.translateCommentGerman",
+				"title": "Translate Comment: German"
+			},
+			{
+				"command": "small-talk.translateGreek",
+				"title": "Translate: Greek"
+			},
+			{
+				"command": "small-talk.translateCommentGreek",
+				"title": "Translate Comment: Greek"
+			},
+			{
+				"command": "small-talk.translateGujarati",
+				"title": "Translate: Gujarati"
+			},
+			{
+				"command": "small-talk.translateCommentGujarati",
+				"title": "Translate Comment: Gujarati"
+			},
+			{
+				"command": "small-talk.translateHaitianCreole",
+				"title": "Translate: Haitian Creole"
+			},
+			{
+				"command": "small-talk.translateCommentHaitianCreole",
+				"title": "Translate Comment: Haitian Creole"
+			},
+			{
+				"command": "small-talk.translateHausa",
+				"title": "Translate: Hausa"
+			},
+			{
+				"command": "small-talk.translateCommentHausa",
+				"title": "Translate Comment: Hausa"
+			},
+			{
+				"command": "small-talk.translateHawaiian",
+				"title": "Translate: Hawaiian"
+			},
+			{
+				"command": "small-talk.translateCommentHawaiian",
+				"title": "Translate Comment: Hawaiian"
+			},
+			{
+				"command": "small-talk.translateHebrew",
+				"title": "Translate: Hebrew"
+			},
+			{
+				"command": "small-talk.translateCommentHebrew",
+				"title": "Translate Comment: Hebrew"
+			},
+			{
+				"command": "small-talk.translateHindi",
+				"title": "Translate: Hindi"
+			},
+			{
+				"command": "small-talk.translateCommentHindi",
+				"title": "Translate Comment: Hindi"
+			},
+			{
+				"command": "small-talk.translateHmong",
+				"title": "Translate: Hmong"
+			},
+			{
+				"command": "small-talk.translateCommentHmong",
+				"title": "Translate Comment: Hmong"
+			},
+			{
+				"command": "small-talk.translateHungarian",
+				"title": "Translate: Hungarian"
+			},
+			{
+				"command": "small-talk.translateCommentHungarian",
+				"title": "Translate Comment: Hungarian"
+			},
+			{
+				"command": "small-talk.translateIcelandic",
+				"title": "Translate: Icelandic"
+			},
+			{
+				"command": "small-talk.translateCommentIcelandic",
+				"title": "Translate Comment: Icelandic"
+			},
+			{
+				"command": "small-talk.translateIgbo",
+				"title": "Translate: Igbo"
+			},
+			{
+				"command": "small-talk.translateCommentIgbo",
+				"title": "Translate Comment: Igbo"
+			},
+			{
+				"command": "small-talk.translateIndonesian",
+				"title": "Translate: Indonesian"
+			},
+			{
+				"command": "small-talk.translateCommentIndonesian",
+				"title": "Translate Comment: Indonesian"
+			},
+			{
+				"command": "small-talk.translateIrish",
+				"title": "Translate: Irish"
+			},
+			{
+				"command": "small-talk.translateCommentIrish",
+				"title": "Translate Comment: Irish"
+			},
+			{
+				"command": "small-talk.translateItalian",
+				"title": "Translate: Italian"
+			},
+			{
+				"command": "small-talk.translateCommentItalian",
+				"title": "Translate Comment: Italian"
+			},
+			{
+				"command": "small-talk.translateJapanese",
+				"title": "Translate: Japanese"
+			},
+			{
+				"command": "small-talk.translateCommentJapanese",
+				"title": "Translate Comment: Japanese"
+			},
+			{
+				"command": "small-talk.translateJavanese",
+				"title": "Translate: Javanese"
+			},
+			{
+				"command": "small-talk.translateCommentJavanese",
+				"title": "Translate Comment: Javanese"
+			},
+			{
+				"command": "small-talk.translateKannada",
+				"title": "Translate: Kannada"
+			},
+			{
+				"command": "small-talk.translateCommentKannada",
+				"title": "Translate Comment: Kannada"
+			},
+			{
+				"command": "small-talk.translateKazakh",
+				"title": "Translate: Kazakh"
+			},
+			{
+				"command": "small-talk.translateCommentKazakh",
+				"title": "Translate Comment: Kazakh"
+			},
+			{
+				"command": "small-talk.translateKhmer",
+				"title": "Translate: Khmer"
+			},
+			{
+				"command": "small-talk.translateCommentKhmer",
+				"title": "Translate Comment: Khmer"
+			},
+			{
+				"command": "small-talk.translateKinyarwanda",
+				"title": "Translate: Kinyarwanda"
+			},
+			{
+				"command": "small-talk.translateCommentKinyarwanda",
+				"title": "Translate Comment: Kinyarwanda"
+			},
+			{
+				"command": "small-talk.translateKorean",
+				"title": "Translate: Korean"
+			},
+			{
+				"command": "small-talk.translateCommentKorean",
+				"title": "Translate Comment: Korean"
+			},
+			{
+				"command": "small-talk.translateKurdish",
+				"title": "Translate: Kurdish"
+			},
+			{
+				"command": "small-talk.translateCommentKurdish",
+				"title": "Translate Comment: Kurdish"
+			},
+			{
+				"command": "small-talk.translateKyrgyz",
+				"title": "Translate: Kyrgyz"
+			},
+			{
+				"command": "small-talk.translateCommentKyrgyz",
+				"title": "Translate Comment: Kyrgyz"
+			},
+			{
+				"command": "small-talk.translateLao",
+				"title": "Translate: Lao"
+			},
+			{
+				"command": "small-talk.translateCommentLao",
+				"title": "Translate Comment: Lao"
+			},
+			{
+				"command": "small-talk.translateLatin",
+				"title": "Translate: Latin"
+			},
+			{
+				"command": "small-talk.translateCommentLatin",
+				"title": "Translate Comment: Latin"
+			},
+			{
+				"command": "small-talk.translateLatvian",
+				"title": "Translate: Latvian"
+			},
+			{
+				"command": "small-talk.translateCommentLatvian",
+				"title": "Translate Comment: Latvian"
+			},
+			{
+				"command": "small-talk.translateLithuanian",
+				"title": "Translate: Lithuanian"
+			},
+			{
+				"command": "small-talk.translateCommentLithuanian",
+				"title": "Translate Comment: Lithuanian"
+			},
+			{
+				"command": "small-talk.translateLuxembourgish",
+				"title": "Translate: Luxembourgish"
+			},
+			{
+				"command": "small-talk.translateCommentLuxembourgish",
+				"title": "Translate Comment: Luxembourgish"
+			},
+			{
+				"command": "small-talk.translateMacedonian",
+				"title": "Translate: Macedonian"
+			},
+			{
+				"command": "small-talk.translateCommentMacedonian",
+				"title": "Translate Comment: Macedonian"
+			},
+			{
+				"command": "small-talk.translateMalagasy",
+				"title": "Translate: Malagasy"
+			},
+			{
+				"command": "small-talk.translateCommentMalagasy",
+				"title": "Translate Comment: Malagasy"
+			},
+			{
+				"command": "small-talk.translateMalay",
+				"title": "Translate: Malay"
+			},
+			{
+				"command": "small-talk.translateCommentMalay",
+				"title": "Translate Comment: Malay"
+			},
+			{
+				"command": "small-talk.translateMalayalam",
+				"title": "Translate: Malayalam"
+			},
+			{
+				"command": "small-talk.translateCommentMalayalam",
+				"title": "Translate Comment: Malayalam"
+			},
+			{
+				"command": "small-talk.translateMaltese",
+				"title": "Translate: Maltese"
+			},
+			{
+				"command": "small-talk.translateCommentMaltese",
+				"title": "Translate Comment: Maltese"
+			},
+			{
+				"command": "small-talk.translateMaori",
+				"title": "Translate: Maori"
+			},
+			{
+				"command": "small-talk.translateCommentMaori",
+				"title": "Translate Comment: Maori"
+			},
+			{
+				"command": "small-talk.translateMarathi",
+				"title": "Translate: Marathi"
+			},
+			{
+				"command": "small-talk.translateCommentMarathi",
+				"title": "Translate Comment: Marathi"
+			},
+			{
+				"command": "small-talk.translateMongolian",
+				"title": "Translate: Mongolian"
+			},
+			{
+				"command": "small-talk.translateCommentMongolian",
+				"title": "Translate Comment: Mongolian"
+			},
+			{
+				"command": "small-talk.translateBurmese",
+				"title": "Translate: Burmese"
+			},
+			{
+				"command": "small-talk.translateCommentBurmese",
+				"title": "Translate Comment: Burmese"
+			},
+			{
+				"command": "small-talk.translateNepali",
+				"title": "Translate: Nepali"
+			},
+			{
+				"command": "small-talk.translateCommentNepali",
+				"title": "Translate Comment: Nepali"
+			},
+			{
+				"command": "small-talk.translateNorwegian",
+				"title": "Translate: Norwegian"
+			},
+			{
+				"command": "small-talk.translateCommentNorwegian",
+				"title": "Translate Comment: Norwegian"
+			},
+			{
+				"command": "small-talk.translateNyanja",
+				"title": "Translate: Nyanja"
+			},
+			{
+				"command": "small-talk.translateCommentNyanja",
+				"title": "Translate Comment: Nyanja"
+			},
+			{
+				"command": "small-talk.translateOdia",
+				"title": "Translate: Odia"
+			},
+			{
+				"command": "small-talk.translateCommentOdia",
+				"title": "Translate Comment: Odia"
+			},
+			{
+				"command": "small-talk.translatePashto",
+				"title": "Translate: Pashto"
+			},
+			{
+				"command": "small-talk.translateCommentPashto",
+				"title": "Translate Comment: Pashto"
+			},
+			{
+				"command": "small-talk.translatePersian",
+				"title": "Translate: Persian"
+			},
+			{
+				"command": "small-talk.translateCommentPersian",
+				"title": "Translate Comment: Persian"
+			},
+			{
+				"command": "small-talk.translatePolish",
+				"title": "Translate: Polish"
+			},
+			{
+				"command": "small-talk.translateCommentPolish",
+				"title": "Translate Comment: Polish"
+			},
+			{
+				"command": "small-talk.translatePunjabi",
+				"title": "Translate: Punjabi"
+			},
+			{
+				"command": "small-talk.translateCommentPunjabi",
+				"title": "Translate Comment: Punjabi"
+			},
+			{
+				"command": "small-talk.translateRomanian",
+				"title": "Translate: Romanian"
+			},
+			{
+				"command": "small-talk.translateCommentRomanian",
+				"title": "Translate Comment: Romanian"
+			},
+			{
+				"command": "small-talk.translateRussian",
+				"title": "Translate: Russian"
+			},
+			{
+				"command": "small-talk.translateCommentRussian",
+				"title": "Translate Comment: Russian"
+			},
+			{
+				"command": "small-talk.translateSamoan",
+				"title": "Translate: Samoan"
+			},
+			{
+				"command": "small-talk.translateCommentSamoan",
+				"title": "Translate Comment: Samoan"
+			},
+			{
+				"command": "small-talk.translateScotsGaelic",
+				"title": "Translate: Scots Gaelic"
+			},
+			{
+				"command": "small-talk.translateCommentScotsGaelic",
+				"title": "Translate Comment: Scots Gaelic"
+			},
+			{
+				"command": "small-talk.translateSerbian",
+				"title": "Translate: Serbian"
+			},
+			{
+				"command": "small-talk.translateCommentSerbian",
+				"title": "Translate Comment: Serbian"
+			},
+			{
+				"command": "small-talk.translateSesotho",
+				"title": "Translate: Sesotho"
+			},
+			{
+				"command": "small-talk.translateCommentSesotho",
+				"title": "Translate Comment: Sesotho"
+			},
+			{
+				"command": "small-talk.translateShona",
+				"title": "Translate: Shona"
+			},
+			{
+				"command": "small-talk.translateCommentShona",
+				"title": "Translate Comment: Shona"
+			},
+			{
+				"command": "small-talk.translateSindhi",
+				"title": "Translate: Sindhi"
+			},
+			{
+				"command": "small-talk.translateCommentSindhi",
+				"title": "Translate Comment: Sindhi"
+			},
+			{
+				"command": "small-talk.translateSinhalese",
+				"title": "Translate: Sinhalese"
+			},
+			{
+				"command": "small-talk.translateCommentSinhalese",
+				"title": "Translate Comment: Sinhalese"
+			},
+			{
+				"command": "small-talk.translateSlovak",
+				"title": "Translate: Slovak"
+			},
+			{
+				"command": "small-talk.translateCommentSlovak",
+				"title": "Translate Comment: Slovak"
+			},
+			{
+				"command": "small-talk.translateSlovenian",
+				"title": "Translate: Slovenian"
+			},
+			{
+				"command": "small-talk.translateCommentSlovenian",
+				"title": "Translate Comment: Slovenian"
+			},
+			{
+				"command": "small-talk.translateSomalian",
+				"title": "Translate: Somalian"
+			},
+			{
+				"command": "small-talk.translateCommentSomalian",
+				"title": "Translate Comment: Somalian"
+			},
+			{
 				"command": "small-talk.translateSpanish",
 				"title": "Translate: Spanish"
 			},
 			{
 				"command": "small-talk.translateCommentSpanish",
 				"title": "Translate Comment: Spanish"
+			},
+			{
+				"command": "small-talk.translateSwahili",
+				"title": "Translate: Swahili"
+			},
+			{
+				"command": "small-talk.translateCommentSwahili",
+				"title": "Translate Comment: Swahili"
+			},
+			{
+				"command": "small-talk.translateSwedish",
+				"title": "Translate: Swedish"
+			},
+			{
+				"command": "small-talk.translateCommentSwedish",
+				"title": "Translate Comment: Swedish"
+			},
+			{
+				"command": "small-talk.translateTagalog",
+				"title": "Translate: Tagalog"
+			},
+			{
+				"command": "small-talk.translateCommentTagalog",
+				"title": "Translate Comment: Tagalog"
+			},
+			{
+				"command": "small-talk.translateTajik",
+				"title": "Translate: Tajik"
+			},
+			{
+				"command": "small-talk.translateCommentTajik",
+				"title": "Translate Comment: Tajik"
+			},
+			{
+				"command": "small-talk.translateTamil",
+				"title": "Translate: Tamil"
+			},
+			{
+				"command": "small-talk.translateCommentTamil",
+				"title": "Translate Comment: Tamil"
+			},
+			{
+				"command": "small-talk.translateTatar",
+				"title": "Translate: Tatar"
+			},
+			{
+				"command": "small-talk.translateCommentTatar",
+				"title": "Translate Comment: Tatar"
+			},
+			{
+				"command": "small-talk.translateTelugu",
+				"title": "Translate: Telugu"
+			},
+			{
+				"command": "small-talk.translateCommentTelugu",
+				"title": "Translate Comment: Telugu"
+			},
+			{
+				"command": "small-talk.translateThai",
+				"title": "Translate: Thai"
+			},
+			{
+				"command": "small-talk.translateCommentThai",
+				"title": "Translate Comment: Thai"
+			},
+			{
+				"command": "small-talk.translateTurkish",
+				"title": "Translate: Turkish"
+			},
+			{
+				"command": "small-talk.translateCommentTurkish",
+				"title": "Translate Comment: Turkish"
+			},
+			{
+				"command": "small-talk.translateTurkmen",
+				"title": "Translate: Turkmen"
+			},
+			{
+				"command": "small-talk.translateCommentTurkmen",
+				"title": "Translate Comment: Turkmen"
+			},
+			{
+				"command": "small-talk.translateUkrainian",
+				"title": "Translate: Ukrainian"
+			},
+			{
+				"command": "small-talk.translateCommentUkrainian",
+				"title": "Translate Comment: Ukrainian"
+			},
+			{
+				"command": "small-talk.translateUrdu",
+				"title": "Translate: Urdu"
+			},
+			{
+				"command": "small-talk.translateCommentUrdu",
+				"title": "Translate Comment: Urdu"
+			},
+			{
+				"command": "small-talk.translateUyghur",
+				"title": "Translate: Uyghur"
+			},
+			{
+				"command": "small-talk.translateCommentUyghur",
+				"title": "Translate Comment: Uyghur"
+			},
+			{
+				"command": "small-talk.translateUzbek",
+				"title": "Translate: Uzbek"
+			},
+			{
+				"command": "small-talk.translateCommentUzbek",
+				"title": "Translate Comment: Uzbek"
+			},
+			{
+				"command": "small-talk.translateVietnamese",
+				"title": "Translate: Vietnamese"
+			},
+			{
+				"command": "small-talk.translateCommentVietnamese",
+				"title": "Translate Comment: Vietnamese"
+			},
+			{
+				"command": "small-talk.translateWelsh",
+				"title": "Translate: Welsh"
+			},
+			{
+				"command": "small-talk.translateCommentWelsh",
+				"title": "Translate Comment: Welsh"
+			},
+			{
+				"command": "small-talk.translateXhosa",
+				"title": "Translate: Xhosa"
+			},
+			{
+				"command": "small-talk.translateCommentXhosa",
+				"title": "Translate Comment: Xhosa"
+			},
+			{
+				"command": "small-talk.translateYiddish",
+				"title": "Translate: Yiddish"
+			},
+			{
+				"command": "small-talk.translateCommentYiddish",
+				"title": "Translate Comment: Yiddish"
+			},
+			{
+				"command": "small-talk.translateYoruba",
+				"title": "Translate: Yoruba"
+			},
+			{
+				"command": "small-talk.translateCommentYoruba",
+				"title": "Translate Comment: Yoruba"
+			},
+			{
+				"command": "small-talk.translateZulu",
+				"title": "Translate: Zulu"
+			},
+			{
+				"command": "small-talk.translateCommentZulu",
+				"title": "Translate Comment: Zulu"
 			}
 		]
 	},

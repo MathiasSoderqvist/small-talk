@@ -34,7 +34,7 @@ export function activate({subscriptions}: vscode.ExtensionContext) {
 	);
 	//translate to comment under current line
 	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSpanish', () => {
-		translateComment('es','es');
+		translateComment('es');  
 		})
 	);
 }

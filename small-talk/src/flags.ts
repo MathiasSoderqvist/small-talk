@@ -5,37 +5,37 @@ let flags = {
   'am' : '🇪🇹', //Amharic 
   'hy' : '🇦🇲', //Armenian
   'az' : '🇦🇿', //Azerbaijani
-  // 'eu' : '' //Basque
-  'be' : '🇧🇾', //Belarus
+  'eu' : '', //Basque
+  'be' : '🇧🇾', //Belarusian
   'bn' : '🇧🇩', //Bengali
   'bs' : '🇧🇦', //Bosnian
   'bg' : '🇧🇬', //Bulgarian
-  // 'ca' : '' //Catalan
+  'ca' : '', //Catalan
   'ceb' : '🇵🇭', //Cebuano
   'zh-CN' : '🇨🇳🇭🇰', //Chinese (simplified)
   'zh-TW' : '🇨🇳🇭🇰', //Chinese (traditional)
-  // 'co' : '' //Corsican
+  'co' : '', //Corsican
   'hr': '🇭🇷', //Croatian
   'cs' : '🇨🇿', //Czech
   'da' : '🇩🇰', //Danish
   'nl' : '🇳🇱', //Dutch
   'en' : '🇬🇧', //English
-  // 'eo' : '', //Esperanto
+  'eo' : '', //Esperanto
   'et' : '🇪🇪', //Estonian
   'fi' : '🇫🇮', //Finnish
   'fr' : '🇫🇷', //French
-  // 'fy' : '', //Frisian
-  // 'gl' : '', //Galician
+  'fy' : '', //Frisian
+  'gl' : '', //Galician
   'ka' : '🇬🇪', //Georgian
   'de' : '🇩🇪', //German
   'el' : '🇬🇷', //Greek
   'gu' : '🇮🇳', //Gujarati
   'ht' : '🇭🇹', //Haitian Creole
   'ha' : '🇳🇪', //Hausa
-  // 'haw' : '', //Hawaiian
+  'haw' : '', //Hawaiian
   'he' : '🇮🇱', //Hebrew
   'hi' : '🇮🇳', //Hindi
-  // 'hmg' : '', //Hmong
+  'hmg' : '', //Hmong
   'hu' : '🇭🇺', //Hungarian
   'is' : '🇮🇸', //Icelandic
   'ig' : '🇳🇬', //Igbo
@@ -49,10 +49,10 @@ let flags = {
   'km' : '🇰🇭', //Khmer
   'rw' : '🇷🇼', //Kinyarwanda
   'ko' : '🇰🇷', //Korean
-  // 'ku' : '', //Kurdish
+  'ku' : '', //Kurdish
   'ky' : '🇰🇬',  //Kyrgyz
   'lo' : '🇱🇦', //Lao
-  // 'la' : '', //Latin
+  'la' : '', //Latin
   'lv' : '🇱🇻', //Latvian
   'lt' : '🇱🇹', //Lithuanian
   'lb' : '🇱🇺', //Luxembourgish
@@ -88,19 +88,19 @@ let flags = {
   'so' : '🇸🇴', //Somalia
   'es' : '🇪🇸', //Spanish
   'su' : '🇸🇩', //Sudanese
-  // 'sw' : '', //Swahili
+  'sw' : '', //Swahili
   'se' : '🇸🇪', //Swedish
   'tl' : '🇵🇭', //Tagalog (Filipino)
   'tg' : '🇹🇯', //Tajik
   'ta' : '🇮🇳', //Tamil
-  // 'tt' : '', //Tatar
+  'tt' : '', //Tatar
   'te' : '🇮🇳', //Telugu
   'th' : '🇹🇭', //Thai
   'tr' : '🇹🇷', //Turkish
   'tk' : '🇹🇲', //Turkmen
   'uk' : '🇺🇦', //Ukrainian
   'ur' : '🇵🇰', //Urdu
-  // 'ug' : '', //Uyghur
+  'ug' : '', //Uyghur
   'uz' : '🇺🇿', //Uzbek
   'vi' : '🇻🇳', //Vietnamese
   'cy' : '🏴󠁧󠁢󠁷󠁬󠁳󠁿', //Welsh
