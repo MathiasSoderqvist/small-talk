@@ -108,19 +108,19 @@
 				"title": "Translate Comment: Cebuano"
 			},
 			{
-				"command": "small-talk.translateChinese(simplified)",
+				"command": "small-talk.translateChineseSimplified",
 				"title": "Translate: Chinese (simplified)"
 			},
 			{
-				"command": "small-talk.translateCommentChinese(simplified)",
+				"command": "small-talk.translateCommentChineseSimplified",
 				"title": "Translate Comment: Chinese (simplified)"
 			},
 			{
-				"command": "small-talk.translateChinese(traditional)",
+				"command": "small-talk.translateChineseTraditional",
 				"title": "Translate: Chinese (traditional)"
 			},
 			{
-				"command": "small-talk.translateCommentChinese(traditional)",
+				"command": "small-talk.translateCommentChineseTraditional",
 				"title": "Translate Comment: Chinese (traditional)"
 			},
 			{
