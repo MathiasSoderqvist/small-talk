@@ -36,7 +36,7 @@ export async function defaultTranslate(defaultLang: string) {
       let character = lineObject.text.length;	//indentation	
       //insert flag (if available) and translation
       let insertion = editor.edit((code) => {					
-        code.insert(new vscode.Position(line, character), `//${flags[flag]} ${translation}`);		// ((line, indentation), translation)
+        code.insert(new vscode.Position(line, character), `//${flags[defaultLang]} ${translation}`);		// ((line, indentation), translation)
         });
         vscode.window.setStatusBarMessage('Translated',  4000);
         vscode.window.setStatusBarMessage('Translate', 5000); //Bar message removed after 5 seconds
