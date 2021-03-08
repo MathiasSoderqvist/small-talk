@@ -2,10 +2,10 @@
 // Import the module and reference it with the alias vscode in your code below
 import { config } from 'dotenv';
 config();
-
-
 import * as vscode from 'vscode';
 import { translateThis, translateComment } from './translate';
+import { defaultTranslate } from './statusBar';
+import { contributes } from '../package.json';
 
 class MyStatusBarItem {																				
 	private statusBarItem: vscode.StatusBarItem;									
@@ -21,11 +21,10 @@ class MyStatusBarItem {
 	}
   
 	off() {																						
-	  this.statusBarItem.text = `$(word-wrap) Translate`;													// declaration of the text for the off method
-	  this.statusBarItem.show();																	// the text is printed to show it's off			
+	  this.statusBarItem.text = `$(word-wrap) Translate`;												
+	  this.statusBarItem.show();																			
 	}
-  
-	setCmd(cmd: string | undefined) {															// set the command to execute on click
+	setCmd(cmd: string | undefined) {														
 	  this.statusBarItem.command = 'small-talk.defaultLanguage';
 	}
   }
@@ -34,17 +33,18 @@ class MyStatusBarItem {
 // your extension is activated the very first time the command is executed
 export function activate({subscriptions}: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "small-talk" is now active!');
-
+	let statusBarItem = new MyStatusBarItem();
+	statusBarItem.setCmd('small-talk.defaultLanguage');
+	const defaultLang = contributes.properties.properties['small-talk.set-language'].default; //import correctly
 	//default language translation from status bar button
-	// subscriptions.push(vscode.commands.registerCommand('small-talk.defaultLanguage', () => {
-	// 	let statusBarItem = new MyStatusBarItem();
-	// 	defaultTranslate(default);
-	// 	statusBarItem.on();
-		
-	// 	// Display a message box to the user
-	// 	vscode.window.showInformationMessage('Ready to translate :)');
-	// })
-	// );
+	subscriptions.push(vscode.commands.registerCommand('small-talk.defaultLanguage', () => {
+		defaultTranslate(defaultLang);
+			statusBarItem.on();
+			setTimeout(function () {
+				statusBarItem.off();
+			 }, 3000);
+	})
+	);
 
 	//translate to info message
 	subscriptions.push(vscode.commands.registerCommand('small-talk.translateAfrikaans', () => {

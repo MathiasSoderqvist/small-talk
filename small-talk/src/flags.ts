@@ -1,5 +1,6 @@
+import { Flags } from './flag-interface';
 //	ISO-639-1 Code with the flag for each supported language (if there is one)
-let flags = {
+const flags: Flags = {
   'af' : '🇿🇦', //Afrikaans
   'sq' : '🇦🇱', //Albanian
   'am' : '🇪🇹', //Amharic 

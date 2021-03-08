@@ -1,11 +1,17 @@
-{
+ {
 	"name": "small-talk",
-	"displayName": "Small Talk",
-	"description": "Translator for your editor",
+	"displayName": "Small Talk - VS Code Translator",
+	"description": "Translator for your editor, using the Google Translate API",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"homepage": "https://github.com/MathiasSoderqvist/small-talk/blob/main/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MathiasSoderqvist/small-talk"
+    },
 	"categories": [
 		"Other"
 	],
@@ -867,7 +873,24 @@
 				"command": "small-talk.translateCommentZulu",
 				"title": "Translate Comment: Zulu"
 			}
-		]
+		], 
+		"properties": {
+			"title": "%ext.config.title%",
+			"type": "object",
+			"properties": {
+				"small-talk.set-language": {
+					"description": "Choose your default language for the translate status bar button.",
+					"scope": "resource",
+					"type": "string",
+					"enum": [
+						"af",
+						"sq",
+						"sv"
+					],
+					"default": "sv"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
@@ -902,4 +925,4 @@
 		"dotenv": "^8.2.0",
 		"request": "^2.88.2"
 	}
-}
+ }

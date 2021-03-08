@@ -55,12 +55,10 @@ export async function translateComment(language: 'af' | 'sq' | 'am' | 'ar' | 'hy
       let line = editor.selection.active.line; //curr line number
       var lineObject = editor.document.lineAt(line);
       let character = lineObject.text.length;	//indentation	
-      //insert flag (if available) and translation
       let insertion = editor.edit((code) => {					
         code.insert(new vscode.Position(line, character), `//${flags[language]} ${translation}`);		// ((line, indentation), translation)
         });
-        vscode.window.setStatusBarMessage('Translated',  4000);
-        vscode.window.setStatusBarMessage('Translate', 5000); //Bar message removed after 5 seconds
+        vscode.window.setStatusBarMessage('Translated',  5000);//Bar message removed after 5 seconds
     });
   }
 }
