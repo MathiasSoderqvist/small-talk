@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 import { v2 } from '@google-cloud/translate';
 import flags from './flags';
 import { settings } from 'node:cluster';
-process.env.GOOGLE_APPLICATION_CREDENTIALS = './translate.json';
+//process.env.GOOGLE_APPLICATION_CREDENTIALS = '/Users/mathiassoderqvist/Documents/Code/Codeworks/Solo-Project/small-talk/small-talk/translate.json';
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const { Translate } = v2;
 const projectId = 'translate-306709';

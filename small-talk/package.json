@@ -874,12 +874,12 @@
 				"title": "Translate Comment: Zulu"
 			}
 		], 
-		"properties": {
-			"title": "%ext.config.title%",
+		"configuration": {
+			"title": "Small-Talk",
 			"type": "object",
 			"properties": {
 				"small-talk.set-language": {
-					"description": "Choose your default language for the translate status bar button.",
+					"description": "Choose your default language for the translate status bar button (Google language codes: https://cloud.google.com/translate/docs/languages).",
 					"scope": "resource",
 					"type": "string",
 					"enum": [
@@ -888,7 +888,19 @@
 						"sv"
 					],
 					"default": "sv"
-				}
+				},
+				"small-talk.pathToConfig": {
+          "description": "Input path to your Google Translate private key",
+          "type": "string",
+          "default": "",
+          "scope": "resource"
+        },
+				"small-talk.projectId": {
+          "description": "Input your Google Cloud Project ID",
+          "type": "string",
+          "default": "",
+          "scope": "resource"
+        }
 			}
 		}
 	},
@@ -926,3 +938,6 @@
 		"request": "^2.88.2"
 	}
  }
+
+
+ 
