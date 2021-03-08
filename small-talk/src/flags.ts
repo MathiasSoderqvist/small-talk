@@ -3,6 +3,7 @@ let flags = {
   'af' : '🇿🇦', //Afrikaans
   'sq' : '🇦🇱', //Albanian
   'am' : '🇪🇹', //Amharic 
+  'ar' : '🇪🇬',   //Arabic
   'hy' : '🇦🇲', //Armenian
   'az' : '🇦🇿', //Azerbaijani
   'eu' : '',   //Basque
@@ -89,7 +90,7 @@ let flags = {
   'es' : '🇪🇸', //Spanish
   'su' : '🇸🇩', //Sudanese
   'sw' : '',   //Swahili
-  'se' : '🇸🇪', //Swedish
+  'sv' : '🇸🇪', //Swedish
   'tl' : '🇵🇭', //Tagalog (Filipino)
   'tg' : '🇹🇯', //Tajik
   'ta' : '🇮🇳', //Tamil

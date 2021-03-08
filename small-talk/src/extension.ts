@@ -2,28 +2,47 @@
 // Import the module and reference it with the alias vscode in your code below
 import { config } from 'dotenv';
 config();
+
+
 import * as vscode from 'vscode';
 import { translateThis, translateComment } from './translate';
 
-let myStatusBarItem: vscode.StatusBarItem; 
+class MyStatusBarItem {																				
+	private statusBarItem: vscode.StatusBarItem;									
+  
+	constructor() {																				
+	  this.statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);	
+	  this.off();
+	}
+  
+	on() {																						
+	  this.statusBarItem.text = `$(check) Translated`;											
+	  this.statusBarItem.show();																																													
+	}
+  
+	off() {																						
+	  this.statusBarItem.text = `$(word-wrap) Translate`;													// declaration of the text for the off method
+	  this.statusBarItem.show();																	// the text is printed to show it's off			
+	}
+  
+	setCmd(cmd: string | undefined) {															// set the command to execute on click
+	  this.statusBarItem.command = 'small-talk.defaultLanguage';
+	}
+  }
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate({subscriptions}: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "small-talk" is now active!');
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	// subscriptions.push(vscode.commands.registerCommand('small-talk.statusBarClick', () => {
-	
-	// //show button on vs code load
-	// myStatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
-	// myStatusBarItem.command = 'small-talk.statusBarClick';
-	// subscriptions.push(myStatusBarItem);
 
+	//default language translation from status bar button
+	// subscriptions.push(vscode.commands.registerCommand('small-talk.defaultLanguage', () => {
+	// 	let statusBarItem = new MyStatusBarItem();
+	// 	defaultTranslate(default);
+	// 	statusBarItem.on();
+		
 	// 	// Display a message box to the user
 	// 	vscode.window.showInformationMessage('Ready to translate :)');
-
-	// 	updateStatusBarItem();
 	// })
 	// );
 
@@ -45,6 +64,16 @@ export function activate({subscriptions}: vscode.ExtensionContext) {
 	//translate to comment under current line
 	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentAmharic', () => {
 		translateComment('am');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateArabic', () => {
+		translateThis('ar');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentArabic', () => {
+		translateComment('ar');  
 		})
 	);
 	//translate to info message
@@ -517,14 +546,577 @@ export function activate({subscriptions}: vscode.ExtensionContext) {
 		translateComment('ku');  
 		})
 	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateKyrgyz', () => {
+		translateThis('ky');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentKyrgyz', () => {
+		translateComment('ky');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateLao', () => {
+		translateThis('lo');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentLao', () => {
+		translateComment('lo');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateLatin', () => {
+		translateThis('la');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentLatin', () => {
+		translateComment('la');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateLatvian', () => {
+		translateThis('lv');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentLatvian', () => {
+		translateComment('lv');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateLithuanian', () => {
+		translateThis('lt');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentLithuanian', () => {
+		translateComment('lt');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateLuxembourgish', () => {
+		translateThis('lb');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentLuxembourgish', () => {
+		translateComment('lb');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMacedonian', () => {
+		translateThis('mk');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMacedonian', () => {
+		translateComment('mk');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMalagasy', () => {
+		translateThis('mg');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMalagasy', () => {
+		translateComment('mg');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMalay', () => {
+		translateThis('ms');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMalay', () => {
+		translateComment('ms');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMalayam', () => {
+		translateThis('ml');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMalayam', () => {
+		translateComment('ml');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMaltese', () => {
+		translateThis('mt');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMaltese', () => {
+		translateComment('mt');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMaori', () => {
+		translateThis('mi');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMaori', () => {
+		translateComment('mi');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMarati', () => {
+		translateThis('mr');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMarati', () => {
+		translateComment('mr');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateMongolian', () => {
+		translateThis('mn');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentMongolian', () => {
+		translateComment('mn');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateBurmese', () => {
+		translateThis('my');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentBurmese', () => {
+		translateComment('my');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateNepali', () => {
+		translateThis('ne');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentNepali', () => {
+		translateComment('ne');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateNorwegian', () => {
+		translateThis('no');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentNorwegian', () => {
+		translateComment('no');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateNyanja', () => {
+		translateThis('ny');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentNyanja', () => {
+		translateComment('ny');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateOdia', () => {
+		translateThis('or');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentOdia', () => {
+		translateComment('or');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translatePashto', () => {
+		translateThis('ps');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentPashto', () => {
+		translateComment('ps');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translatePersian', () => {
+		translateThis('fa');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentPersian', () => {
+		translateComment('fa');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translatePolish', () => {
+		translateThis('pl');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentPolish', () => {
+		translateComment('pl');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translatePortuguese', () => {
+		translateThis('pt');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentPortuguese', () => {
+		translateComment('pt');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translatePunjabi', () => {
+		translateThis('pa');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentPunjabi', () => {
+		translateComment('pa');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateRomanian', () => {
+		translateThis('ro');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentRomanian', () => {
+		translateComment('ro');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateRussian', () => {
+		translateThis('ru');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentRussian', () => {
+		translateComment('ru');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSamoan', () => {
+		translateThis('sm');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSamoan', () => {
+		translateComment('sm');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateScotsGaelic', () => {
+		translateThis('gd');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentScotsGaelic', () => {
+		translateComment('gd');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSerbian', () => {
+		translateThis('sr');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSerbian', () => {
+		translateComment('sr');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSesotho', () => {
+		translateThis('st');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSesotho', () => {
+		translateComment('st');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateShona', () => {
+		translateThis('sn');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentShona', () => {
+		translateComment('sn');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSindhi', () => {
+		translateThis('sd');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSindhi', () => {
+		translateComment('sd');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSinhalese', () => {
+		translateThis('si');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSinhalese', () => {
+		translateComment('si');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSlovak', () => {
+		translateThis('sk');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSlovak', () => {
+		translateComment('sk');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSlovenian', () => {
+		translateThis('sl');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSlovenian', () => {
+		translateComment('sl');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSomalian', () => {
+		translateThis('so');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSomalian', () => {
+		translateComment('so');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSpanish', () => {
+		translateThis('es');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSpanish', () => {
+		translateComment('es');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSwahili', () => {
+		translateThis('sw');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSwahili', () => {
+		translateComment('sw');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateSwedish', () => {
+		translateThis('sv');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentSwedish', () => {
+		translateComment('sv');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTagalog', () => {
+		translateThis('tl');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTagalog', () => {
+		translateComment('tl');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTajik', () => {
+		translateThis('tg');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTajik', () => {
+		translateComment('tg');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTamil', () => {
+		translateThis('ta');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTamil', () => {
+		translateComment('ta');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTatar', () => {
+		translateThis('tt');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTatar', () => {
+		translateComment('tt');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTelugu', () => {
+		translateThis('te');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTelugu', () => {
+		translateComment('te');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateThai', () => {
+		translateThis('th');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentThai', () => {
+		translateComment('th');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTurkish', () => {
+		translateThis('tr');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTurkish', () => {
+		translateComment('tr');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateTurkmen', () => {
+		translateThis('tk');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentTurkmen', () => {
+		translateComment('tk');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateUkrainian', () => {
+		translateThis('uk');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentUkrainian', () => {
+		translateComment('uk');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateUrdu', () => {
+		translateThis('ur');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentUrdu', () => {
+		translateComment('ur');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateUyghur', () => {
+		translateThis('ug');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentUyghur', () => {
+		translateComment('ug');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateUzbek', () => {
+		translateThis('uz');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentUzbek', () => {
+		translateComment('uz');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateVietnamese', () => {
+		translateThis('vi');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentVietnamese', () => {
+		translateComment('vi');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateWelsh', () => {
+		translateThis('cy');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentWelsh', () => {
+		translateComment('cy');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateXhosa', () => {
+		translateThis('xh');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentXhosa', () => {
+		translateComment('xh');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateYiddish', () => {
+		translateThis('yi');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentYiddish', () => {
+		translateComment('yi');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateYoruba', () => {
+		translateThis('yo');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentYoruba', () => {
+		translateComment('yo');  
+		})
+	);
+	//translate to info message
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateZulu', () => {
+		translateThis('zu');
+		})
+	);
+	//translate to comment under current line
+	subscriptions.push(vscode.commands.registerCommand('small-talk.translateCommentZulu', () => {
+		translateComment('zu');  
+		})
+	);
 }
-
-//status bar default language translate
-// function updateStatusBarItem(): void {
-// 	myStatusBarItem.text = `$(word-wrap) Translate`;
-	
-// 	myStatusBarItem.show();
-// }
 
 // this method is called when your extension is deactivated
 export function deactivate() {}
