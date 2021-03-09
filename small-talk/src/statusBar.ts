@@ -3,15 +3,23 @@ import * as vscode from 'vscode';
 import { v2 } from '@google-cloud/translate';
 import flags from './flags';
 import { settings } from 'node:cluster';
-//process.env.GOOGLE_APPLICATION_CREDENTIALS = '/Users/mathiassoderqvist/Documents/Code/Codeworks/Solo-Project/small-talk/small-talk/translate.json';
+//access package.json
+const config = vscode.workspace.getConfiguration('small-talk');
+//obtain input from user for private key path (json file)
+const path = config.get("pathToConfig");
+//const projectId: string | undefined = config.get("projectId");
+//process.env.GOOGLE_APPLICATION_CREDENTIALS = `${path}`;
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const { Translate } = v2;
-const projectId = 'translate-306709';
+const projectId = 'translator-new-306620';
+
 // Instantiates a client
 const translator = new Translate({ projectId }); //google cloud platform service id number
 
 //Default language status bar translate func
 export async function defaultTranslate(defaultLang: any) {
+  console.log(path, "PATH");
+  console.log(projectId, "ID");
   //active editor
   const editor = vscode.window.activeTextEditor;
   if (editor) {
@@ -37,3 +45,5 @@ export async function defaultTranslate(defaultLang: any) {
     });
   }
 }
+
+

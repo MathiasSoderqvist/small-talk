@@ -1,20 +1,34 @@
-# Small-Talk README
+# Small-Talk - VS Code Translator
 
-This is the README for your extension "Small-Talk". After writing up a brief description, we recommend including the following sections.
+![small-talk-logo](images/smalltalk-logo-03cropped.png)
+
+Quick, easy translation throughout your editor through Google's Translation API.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Find any language through the the command palette:
 
-For example if there is an image subfolder under your extension project workspace:
+![Translate-comment](https://media.giphy.com/media/r4xH84A2m6sc7fRLbv/giphy.gif)
 
-\!\[Translate to your default language:\]\(./images/default.gif\)
+Translate to your default language through the status bar button:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Translate-default](https://media.giphy.com/media/17EtjhY1JLA9JjtYa6/giphy.gif)
+
+Get a simple translation message without adding to your code:
+
+![Translate-message](https://media.giphy.com/media/MuXGOau3R9nOVAxQkZ/giphy.gif)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+To use this extension, you'll need a Google Translate API key. To get one, simply follow these easy steps:
+
+1) Visit [Google Cloud Platform](https://console.cloud.google.com/) and create a new project if you don't already have one.
+
+2) Visit the [API's](<https://console.cloud.google.com/apis/library>) page. Search and enable the Cloud Translation API.
+
+3) Create a Service Account Key in the Credentials page. Be sure to select Project --> Owner in the roles. You will automatically download a JSON file containing your key and other info. Keep this safe and private.
+
+4) Head to Small-Talk's extension settings (cmd + shift + p and search "workspace settings"). Input the path to your JSON file as well as the project ID on your cloud project in the designated inputs and enjoy!
 
 ## Extension Settings
 
@@ -29,42 +43,17 @@ This extension contributes the following settings:
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Please feel free to email smalltalk.vscode@gmail.com with any bugs or issues you may encounter.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+No updates as of yet.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release.
 
 -----------------------------------------------------------------------------------------------------------
-## Following extension guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**

@@ -6,12 +6,12 @@ import flags from './flags';
 const config = vscode.workspace.getConfiguration('small-talk');
 //obtain input from user for private key path (json file)
 const path = config.get("pathToConfig");
-//const projectId = config.get("projectId");
-process.env.GOOGLE_APPLICATION_CREDENTIALS = `${path}`;
-// process.env.GOOGLE_APPLICATION_CREDENTIALS = '/Users/mathiassoderqvist/Documents/Code/Codeworks/Solo-Project/small-talk/small-talk/translate.json';
+//const projectId: string | undefined = config.get("projectId");
+//process.env.GOOGLE_APPLICATION_CREDENTIALS = `${path}`;
+process.env.GOOGLE_APPLICATION_CREDENTIALS = '/Users/mathiassoderqvist/Downloads/translator-new-306620-b07b0b8250c5.json';
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const { Translate } = v2;
-const projectId = 'small-talk-306022';
+const projectId = 'translator-new-306620';
 
 // Instantiates a client
 const translator = new Translate({ projectId }); //google cloud platform service id number

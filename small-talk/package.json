@@ -3,6 +3,7 @@
 	"displayName": "Small Talk - VS Code Translator",
 	"description": "Translator for your editor, using the Google Translate API",
 	"version": "0.0.1",
+	"icon": "images/smalltalk-logo-03.png",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
@@ -885,7 +886,9 @@
 					"enum": [
 						"af",
 						"sq",
-						"sv"
+						"sv",
+						"es",
+						"no"
 					],
 					"default": "sv"
 				},

@@ -12,7 +12,7 @@ const flags: Flags = {
   'bn' : '🇧🇩', //Bengali
   'bs' : '🇧🇦', //Bosnian
   'bg' : '🇧🇬', //Bulgarian
-  'ca' : '',   //Catalan
+  'ca' : '👑',   //Catalan
   'ceb' : '🇵🇭', //Cebuano
   'zh-CN' : '🇨🇳🇭🇰', //Chinese (simplified)
   'zh-TW' : '🇨🇳🇭🇰', //Chinese (traditional)

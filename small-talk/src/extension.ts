@@ -33,7 +33,6 @@ class MyStatusBarItem {
 // your extension is activated the very first time the command is executed
 export function activate({subscriptions}: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "small-talk" is now active!');
-	console.log(contributes.configuration.properties['small-talk.pathToConfig'].default, "KEEEEEEEY");
 	let statusBarItem = new MyStatusBarItem();
 	statusBarItem.setCmd('small-talk.defaultLanguage');
 	const defaultLang = contributes.configuration.properties['small-talk.set-language'].default; //import correctly
