@@ -2,7 +2,7 @@
 
 ![small-talk-logo](small-talk/images/smalltalk-logo-03cropped.png)
 
-Quick, easy translation throughout your editor through Google's Translation API.
+Quick, easy translation throughout your editor using Google's Translation API.
 
 ## Features
 
