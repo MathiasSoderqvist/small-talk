@@ -30,17 +30,6 @@ To use this extension, you'll need a Google Translate API key. To get one, simpl
 
 4) Head to Small-Talk's extension settings (cmd + shift + p and search "workspace settings"). Input the path to your JSON file as well as the project ID on your cloud project in the designated inputs and enjoy!
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
 ## Known Issues
 
 Please feel free to email smalltalk.vscode@gmail.com with any bugs or issues you may encounter.
@@ -54,6 +43,5 @@ No updates as of yet.
 Initial release.
 
 -----------------------------------------------------------------------------------------------------------
-
 
 **Enjoy!**
